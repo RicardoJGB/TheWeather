@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#ce1635"
+        android:textStyle="bold"
+        android:text="Welcome. Please enter a city." />
+
+    <EditText
+        android:id="@+id/etCityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter name of city"
+        android:textColorHint="#ce1635"/>
+
+    <TextView
+        android:id="@+id/tvTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:textColor="#191a1c"
+        android:textSize="25dp"
+        android:text="@string/TheWeather"/>
+
+    <Button
+        android:id="@+id/btnGetWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="GET WEATHER!"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="#7734db"
+        android:layout_gravity="end"
+        android:onClick="FindWeather"/>
+
+</LinearLayout>
